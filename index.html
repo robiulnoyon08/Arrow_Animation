@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow_Button</title>
+
+
+    <style>
+       .right_arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+        animation: right_arrow 2s infinite alternate;
+    }
+       
+    @keyframes right_arrow {
+            0% {
+                background-color: red;
+            }
+            20% {
+                background-color: blueviolet;
+            }
+            50% {
+                background-color: aqua;
+            }
+            70% {
+                background-color: yellow;
+            }
+            85% {
+                background-color: orange;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="right_arrow"></div>
+    <!-- <div class="title">Right Arrow</div> -->
+</body>
+</html>
